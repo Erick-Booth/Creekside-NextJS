@@ -1,0 +1,30 @@
+$Iron: #fefefe;
+$Gold-Light: #FFB876;
+$Gold-Dark: #C07721;
+$Gold-Gradient: linear-gradient(to bottom right, $Gold-Light, $Gold-Dark);
+$Blue-Light: #2A3C5F;
+$Blue-Dark: #161C27;
+$Blue-Gradient: linear-gradient(to bottom right, $Blue-Light, $Blue-Dark);
+
+@mixin coloredText($color) {
+    background: $color;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // filter: drop-shadow(0 0 6px rgba(0, 0, 0, .8)) brightness(115%);
+}
+
+@mixin CTA {
+    display: block;
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 99px;
+    margin: 0.5rem 0;
+
+    &:hover {
+        background-color: white;
+        color: $Blue-Light;
+    }
+}
