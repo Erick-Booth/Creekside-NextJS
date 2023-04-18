@@ -8,6 +8,9 @@ export default function MenuItemList(props) {
     return (
         <>
             <h2 className={ styles.categoryHeader }>{ props.header }</h2>
+            {
+                props.header == 'salads' && <h4 className={ styles.categoryDesc }>Ranch, Blue&nbsp;Cheese, Vinegarette, 1000&nbsp;Island, Italian, Honey&nbsp;Mustard</h4>
+            }
             <div className={ styles.menuItems }>
                 {
                     Array.isArray(props.list) && props.list.map((item, x) => {
@@ -25,6 +28,7 @@ export default function MenuItemList(props) {
                             {
                                 props.header == 'wine' && <h4 className={ styles.subCategoryDesc } key={ `sizes_${k}` }>6oz / 8oz / Bottle</h4>
                             }
+
                             {
                                 key.toLowerCase() == 'house' &&
                                 <>

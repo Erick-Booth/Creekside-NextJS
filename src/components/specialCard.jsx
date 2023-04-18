@@ -54,6 +54,12 @@ export default function SpecialCard({ day, isToday }) {
                 </div>
             }
 
+            { day == 0 && isToday &&
+                <div className='specialCard'>
+                    <h2>Closed on Sundays!</h2>
+                </div>
+            }
+
         </>
 
     );

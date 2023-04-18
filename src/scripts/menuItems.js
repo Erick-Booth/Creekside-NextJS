@@ -141,7 +141,7 @@ export default {
             "Top Shelf White": [
                 new MenuItem("William Hill", "$9 / 12 / 34", "Chardonnay - Central Coast, California"),
                 new MenuItem("Ecco Domani", "$8 / 11 / 30", "Pinot Grigio - Venezi, Italy"),
-                new MenuItem("Casal Garcia", "$7.5 / 10.5 / 22", "Rose - Vinho Verde, Portugal"),
+                new MenuItem("Casal Garcia", "$7.5 / 10.5 / 22", "Rosé - Vinho Verde, Portugal"),
                 new MenuItem("Peter Mertes", "", "Reisling"),
                 new MenuItem("Noble Vines", "", "Sauvignon Blanc"),
                 new MenuItem("Stoneleigh", "", "Sauvignon Blanc"),
@@ -149,9 +149,9 @@ export default {
             "Small Bottles & Champagne": [
                 new MenuItem('Barefoot', null, 'Pinot Grigio'),
                 new MenuItem('Lamarca', null, 'Prosecco'),
-                new MenuItem('Ruffino', null, 'Rose'),
+                new MenuItem('Ruffino', null, 'Rosé'),
                 new MenuItem('Clos Du Bois', null, 'Chardonnay'),
-                new MenuItem('Kim Crawford', null, 'Rose'),
+                new MenuItem('Kim Crawford', null, 'Rosé'),
                 new MenuItem('Winemaker', null, 'Brut'),
                 new MenuItem('Ste Michelle', null, 'Champagne'),
                 new MenuItem('Duc Del Valmer', null, 'Brut'),

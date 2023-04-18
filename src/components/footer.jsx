@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer>
+        <footer id='Footer'>
             <p>Warning: consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food-borne illness, especially if you have a certain medical condition.</p>
             <Link className='logo' href={ '/' }><Image src={ Logo } alt={ "Creekside Bar & Grille" } /></Link>
 

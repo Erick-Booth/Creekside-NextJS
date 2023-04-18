@@ -29,19 +29,26 @@ export default function MenuItem({ data }) {
     return (
         <div className={ styles.menuItem }>
             { data.image_URL && <Image src={ data.image_URL } height={ 200 } width={ 150 } alt='' title={ data.name } /> }
-            <div className={ styles.titleBox }>
-                <p className={ styles.title }>
-                    <span>{ data.name }</span>
-                    <span className={ styles.icons }>
-                        { data.tags?.map((tag, i) => {
-                            return <span key={ i }>
-                                <iconify-icon icon={ getIcon(tag) } title={ tag[0].toUpperCase() + tag.slice(1) } />
-                            </span>;
-                        }) }
-                    </span>
-                </p>
-                { data.price && <p className={ styles.price }><span>{ data.price }</span></p> }
-            </div>
+
+            {
+                (data.name || data.price) &&
+                <div className={ styles.titleBox }>
+
+                    <p className={ styles.title }>
+                        <span>{ data.name }</span>
+                        <span className={ styles.icons }>
+                            { data.tags?.map((tag, i) => {
+                                return <span key={ i }>
+                                    <iconify-icon icon={ getIcon(tag) } title={ tag[0].toUpperCase() + tag.slice(1) } />
+                                </span>;
+                            }) }
+                        </span>
+                    </p>
+
+                    { data.price && <p className={ styles.price }><span>{ data.price }</span></p> }
+                </div>
+            }
+
             <p className={ styles.desc }>{ data.desc }</p>
         </div>
     );

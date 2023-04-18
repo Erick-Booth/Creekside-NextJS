@@ -1,6 +1,8 @@
 @use './globals';
 @import url('https://fonts.googleapis.com/css2?family=Koulen:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 
 :root {
     color-scheme: light only;
@@ -19,7 +21,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    font-family: "Koulen", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: globals.$Iron;
@@ -64,16 +66,18 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     background: globals.$Gold-Gradient;
+    background: globals.$Blue-Dark;
+    padding: 12px 1rem;
 
     a,
     p {
         color: white;
-        font-size: 20px;
+        font-size: 16px;
         white-space: nowrap;
         padding: 0 0.5rem;
 
         iconify-icon {
-            color: globals.$Blue-Dark;
+            color: globals.$Gold-Light;
         }
     }
 }
@@ -108,7 +112,7 @@ img {
         }
 
         iconify-icon {
-            font-size: 30px;
+            font-size: 26px;
         }
 
         &.active {
@@ -177,7 +181,8 @@ img {
     }
 
     h2 {
-        font-size: clamp(30px, 13vw, 70px);
+        font-size: clamp(30px, 13vw, 50px);
+        padding: 0 1rem;
     }
 
     .icons {
@@ -223,7 +228,9 @@ img {
     }
 
     a {
-        @include globals.CTA
+        @include globals.CTA;
+        font-size: 18px;
+        padding: 0.8rem 1.2rem;
     }
 }
 
@@ -249,7 +256,7 @@ img {
     margin: 0.5rem 0;
 }
 
-footer {
+#Footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -279,14 +286,16 @@ footer {
         display: flex;
         gap: 1rem;
         @include globals.coloredText(globals.$Gold-Gradient);
+        font-size: 14px;
     }
 
     p {
-        opacity: .6;
         margin: 1rem;
         line-height: 1;
         max-width: 500px;
-        color: white;
+        color: rgb(161, 167, 194);
+        font-size: 14px;
+        font-weight: 500;
     }
 
     .credit a {
@@ -343,6 +352,7 @@ footer {
 .centerHeading {
     font-family: "Satisfy";
     font-size: 40px;
+    color: globals.$Blue-Light;
     text-transform: capitalize;
     text-align: center;
     padding: 2rem 1rem;

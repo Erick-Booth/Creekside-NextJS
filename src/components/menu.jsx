@@ -51,7 +51,7 @@ export default function Drinks(props) {
         <h1 className='centerHeading'>Creekside <span>{ props.dataCategory }</span> menu</h1>
 
         {
-            props.dataCategory == 'drinks' &&
+            (props.dataCategory == 'drinks' && filter != 'beer') &&
             <div className={ styles.iconPreviews }>
                 <span><iconify-icon inline icon="noto:lollipop" />Sweet</span>
                 <span><iconify-icon inline icon="arcticons:lime" />Sour</span>
