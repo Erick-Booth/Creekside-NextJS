@@ -16,7 +16,6 @@ export default function Drinks(props) {
     useEffect(() => {
         clearTimeout(TIMEOUT);
         if (ROUTER.query.filter) { setFilter(ROUTER.query.filter) }
-        scrollCategoryButtons();
     }, [ROUTER.query]);
 
     function scrollCategoryButtons() {
