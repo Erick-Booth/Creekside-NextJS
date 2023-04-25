@@ -24,7 +24,7 @@ class MenuItem {
     }
 }
 
-export default {
+export default menuItems = {
     food: {
         starters: [
             new MenuItem('Chip Basket', 6, 'Enjoy a basket of our multi-colored tortilla chips with salsa & queso', ['vegetarian', 'vegan']),
