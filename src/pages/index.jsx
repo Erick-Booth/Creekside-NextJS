@@ -33,7 +33,7 @@ export default function Home() {
 
       <div className={ styles.welcomeBox }>
         <h1>Welcome to Creekside Bar & Grille, Springhill Suites Marriott</h1>
-        <img src="/img/svg/Welcome-MSG.svg" alt="Welcome to Creekside Bar & Grille, Springhill Suites Marriott" />
+        <Image src="/img/svg/Welcome-MSG.svg" alt="Welcome to Creekside Bar & Grille, Springhill Suites Marriott" width={ 500 } height={ 350 } />
       </div>
 
       <main className={ styles.main }>
