@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../public/img/svg/Logo.svg';
+import Logo from '../../public/img/svg/Logo-2.svg';
 import Image from 'next/image';
 import Socials from './socials';
 import Link from 'next/link';
