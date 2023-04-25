@@ -153,16 +153,15 @@ img {
 }
 
 .specialCard {
-    display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: globals.$Blue-Gradient;
     padding: 3rem 1rem;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
     border-radius: 1rem;
-    max-width: 600px;
+    width: min(100%, 1200px);
 
     >* {
         line-height: 1;
@@ -172,7 +171,8 @@ img {
     .star {
         position: absolute;
         top: 0;
-        translate: 0 -50%;
+        left: 50%;
+        translate: -50% -50%;
         font-size: 50px;
         background: globals.$Gold-Gradient;
         line-height: 0;
@@ -181,7 +181,7 @@ img {
     }
 
     h2 {
-        font-size: clamp(30px, 13vw, 50px);
+        font-size: clamp(30px, 10vw, 50px);
         padding: 0 1rem;
     }
 
@@ -215,7 +215,7 @@ img {
         &.desc {
             font-size: 18px;
             max-width: 80%;
-            margin: 1rem 0;
+            margin: 1rem auto;
         }
     }
 
@@ -231,6 +231,9 @@ img {
         @include globals.CTA;
         font-size: 18px;
         padding: 0.8rem 1.2rem;
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
 }
 
@@ -238,13 +241,13 @@ img {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 0 1rem;
 }
 
 .blueHeading {
     font-size: 50px;
-    max-width: 450px;
     line-height: 0.8;
-    margin: 0 1rem;
+    align-self: flex-start;
     @include globals.coloredText(globals.$Blue-Gradient);
 }
 
@@ -287,6 +290,7 @@ img {
         gap: 1rem;
         @include globals.coloredText(globals.$Gold-Gradient);
         font-size: 14px;
+        line-height: 1;
     }
 
     p {

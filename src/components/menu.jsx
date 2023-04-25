@@ -70,11 +70,14 @@ export default function Drinks(props) {
             </div>
         }
 
+
         { Object.keys(props.menuItems).map((item, i) => {
             if (!filter || filter.toLowerCase() == item.toLowerCase()) {
                 return <MenuItemList key={ i } list={ props.menuItems[item] } header={ item } />
             }
         }) }
+
+
 
         <div className='container'>
             <SpecialCard day={ new Date().getDay() } isToday={ true } />
