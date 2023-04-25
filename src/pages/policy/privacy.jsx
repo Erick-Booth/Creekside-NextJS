@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Privacy() {
     return (
@@ -8,9 +9,9 @@ export default function Privacy() {
             <Head><title>Privacy Policy | Creekside Bar & Grille</title></Head>
             <div id="Privacy Policy" className={ 'policy' }>
                 <header>
-                    <Link href={ '/' }><img src='/img/svg/Logo.svg' alt="Creekside Bar & Grille" /></Link>
+                    <Link href={ '/' }><Image src='/img/svg/Logo.svg' alt="Creekside Bar & Grille" height={ 250 } width={ 350 } /></Link>
                 </header>
-                <p>Revised 4/13/2023</p><br />
+                <p>Revised 4/25/2023</p><br />
                 <h1>PRIVACY POLICY</h1><br /><br />
                 Thank you for choosing to be part of our community at Creekside Bar & Grille (“Brand”, “we”, “us”, or
                 “our”). We are committed to protecting your personal information and your right to privacy. If

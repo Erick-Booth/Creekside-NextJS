@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Terms() {
     return (
@@ -8,9 +9,9 @@ export default function Terms() {
             <Head><title>Terms of Use | Creekside Bar & Grille</title></Head>
             <div id="Terms" className={ 'policy' }>
                 <header>
-                    <Link href={ '/' }><img src='/img/svg/Logo.svg' alt="Creekside Bar & Grille" /></Link>
+                    <Link href={ '/' }><Image src='/img/svg/Logo.svg' alt="Creekside Bar & Grille" height={ 250 } width={ 350 } /></Link>
                 </header>
-                <p>Revised: 4/13/2023</p>
+                <p>Revised: 4/25/2023</p>
                 <h2>AGREEMENT TO TERMS</h2><br /><br />
                 These Terms of Use constitute a legally binding agreement
                 made between you, whether personally or on behalf of an entity (&quot;you&quot;) and Creekside Bar & Grille (&quot;Brand&quot;, &rsquo;we&quot;, &quot;us&quot;,
