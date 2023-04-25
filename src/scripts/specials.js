@@ -1,4 +1,4 @@
-export default specials = [
+const SPECIALS = [
     {
         day: "Sunday"
     },
@@ -87,3 +87,5 @@ export default specials = [
         },]
     },
 ];
+
+export default SPECIALS;
