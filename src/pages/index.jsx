@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/home.module.scss';
@@ -24,13 +23,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Creekside Menu</title>
-        <meta name="description" content="Creekside Bar & Grille Menu" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className={ styles.welcomeBox }>
         <h1>Welcome to Creekside Bar & Grille, Springhill Suites Marriott</h1>
         <Image src="/img/svg/Welcome-MSG-2.svg" alt="Welcome to Creekside Bar & Grille, Springhill Suites Marriott" width={ 500 } height={ 350 } />
