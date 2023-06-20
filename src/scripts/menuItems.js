@@ -90,7 +90,7 @@ const MENUITEMS = {
         ],
         beer: {
             "bottles & seltzers": [
-                new MenuItem("Cathead Sparkling", 20, "Enjoy a bucket of 5 any-flavor Cathead Sparkling Satsuma madarin/strawberry lemonade/grapefruit", ['seasonal']),
+                new MenuItem("Cathead Sparkling", 20, "Enjoy a bucket of 5 any-flavor Cathead Sparkling Satsuma mandarin/strawberry lemonade/grapefruit", ['seasonal']),
                 new MenuItem("Funny Water Bucket", 18, "Enjoy a bucket of 5 any-flavor Funny Water. Light & Non-carbonated alcoholic water. Berry ACAI/Ginger Lemon/Jalepeno Lime", ['seasonal']),
                 new MenuItem("Yazoo Bucket", 12, "Enjoy a bucket of 5 local Yazoo beer. Either Calla IPA or Gerst Amber Ale.", ['seasonal']),
                 new MenuItem("High Noon Bucket", 18, "Enjoy a bucket of 5 High Noon vodka sodas, or tequila seltzers.", ['seasonal']),
@@ -164,9 +164,10 @@ const MENUITEMS = {
         cocktails: [
             new MenuItem("Mississippi Mule", 9, "Cathead Honeysuckle vodka, lime & ginger beer.", ['seasonal'], ''),
             new MenuItem("Peach Colada", 10, "Bacardi Superior rum, Malibu Coconut rum, peach syrup, coconut cream & pineapple juice.", ['sweet', 'seasonal'], ''),
-            new MenuItem("Orange Limeade", 9, "Cathead bitter orange vodka, lime juice, simple syrup, starry lemon-lime soda.", ['sweet', 'seasonal'], ''),
+            new MenuItem("Orange Limeade", 9, "Cathead bitter orange vodka, lime juice, simple syrup, starry lemon-lime soda.", ['sweet', 'sour', 'seasonal'], ''),
             new MenuItem("Bourbon Tea", 9, "Old Soul Bourbon, Iced Tea, simple syrup, pick a flavor: peach, strawberry & raspberry.", ['sweet', 'seasonal'], ''),
-            new MenuItem("Berry Lemonade", 10, "Pink Whitney, Cathead Rspberry vodka, strawberry & raspberry puree, lemonade", ['sweet', 'seasonal'], ''),
+            new MenuItem("Berry Lemonade", 10, "Pink Whitney, Cathead Raspberry vodka, strawberry & raspberry puree, lemonade", ['sweet', 'sour', 'seasonal'], ''),
+
             new MenuItem("Captain Charlotte", 10, "Captain Morgan Spiced Rum, Orange & Pineapple Juice, Splash of Grenadine", ['sweet'], '/img/drinks/cocktails/the_charlotte.webp'),
             new MenuItem("Chattanooga Cherry Mule", 12, "Chattanooga Casket Whiskey, cherries, lime, ginger beer", null, '/img/drinks/cocktails/cherry-mule.webp'),
             new MenuItem("Blue Spirit", 11, "Vodka, Rum, Gin, Blue Curacao, Sour Mix, Sierra Mist", ['sweet'], '/img/drinks/cocktails/blue_spirit.webp'),
@@ -175,8 +176,8 @@ const MENUITEMS = {
             new MenuItem("Melon Ball Refresher", 11, "Ketel One Vodka, Midori Melon Liqueur, pineapple Juice, lemon juice, sierra mist", ['sweet', 'sour'], '/img/drinks/cocktails/melonball.webp'),
             new MenuItem("Filty Bloody Mary", 12, "St. George's Green Chile vodka, Tito's Filthy Bloody Mary Mix, worcestershire, lime juice", ['hot'], '/img/drinks/cocktails/bloody.webp'),
             new MenuItem("A Rose In The Evening", 11, "Bacardi Superior, lemon juice, peach syrup, strawberry puree topped with kim crawford rose", null, '/img/drinks/cocktails/rose.webp'),
-            new MenuItem("Blueberry Negroni", 10.5, "Tanqueray Gin, Campari, Sweet Vermouth, blueberries & blueberry simple syrup", null, '/img/drinks/cocktails/negroni-blueberry.webp'),
-            new MenuItem("Brown Derby", 11, "Maker's Mark, grapefruit juice, honey syrup", null, '/img/drinks/cocktails/derby.webp'),
+            new MenuItem("Blueberry Negroni", 10.5, "Tanqueray Gin, Campari, Sweet Vermouth, blueberries & blueberry simple syrup", ['sweet', 'strong'], '/img/drinks/cocktails/negroni-blueberry.webp'),
+            new MenuItem("Brown Derby", 11, "Maker's Mark, grapefruit juice, honey syrup", ['strong'], '/img/drinks/cocktails/derby.webp'),
             new MenuItem("Bombay Bramble", 10.5, "Bombay Sapphire Gin, Chambord Black Raspberry Liqueur, Lemon, Simple Syrup", ['sweet'], '/img/drinks/cocktails/bramble-new.webp'),
             new MenuItem("Creekside Collins", 11, "Hendrick's Gin, lemon or lime juice, sugar, soda", ['sweet', 'sour'], '/img/drinks/cocktails/collins.webp'),
             new MenuItem("Greedy Godfather", 12, "Macallan 12, Amaretto, twist", ['strong'], '/img/drinks/cocktails/godfather.webp'),
@@ -184,7 +185,7 @@ const MENUITEMS = {
             new MenuItem("Royal Pain", 11, "Crown Royal Peach Whisky, Amaretto, Chambord, Peach Schnapps, Pineapple", ['sweet', 'strong'], '/img/drinks/cocktails/royal.webp'),
             new MenuItem("Milky Way Martini", 11, "Ciroc Vodka, Kahlua, Bailey's Irish Creme, Chocolate Syrup, Half & Half", ['sweet'], '/img/drinks/cocktails/chocolate_martini.webp'),
             new MenuItem("Bee's Knees", 11, "Tanqueray Gin, Lemon, honey", ['sweet', 'sour', 'strong'], '/img/drinks/cocktails/bees.webp'),
-            new MenuItem("Ward Eight", 11, "Bulleit Rye, Orange, Lemon, grenadine, cherry", ['sweet'], '/img/drinks/cocktails/ward.webp'),
+            new MenuItem("Ward Eight", 11, "Bulleit Rye, Orange, Lemon, grenadine, cherry", ['sweet', 'strong'], '/img/drinks/cocktails/ward.webp'),
             new MenuItem("Cupid's Cosmo", 10, "Pink Whitney Vodka, Cranberry, grenadine, Splash of Sour", ['sweet'], '/img/drinks/cocktails/pink_cosmo.webp'),
             new MenuItem("Grand Sidecar", 11, "Grand Mariner Cognac & Orange Liqueur, Lemon, sugar", ['sweet'], '/img/drinks/cocktails/sidecar.webp'),
             new MenuItem("Spicy Margarita", 12, "Patron Silver, Triple Sec, Lime & Orange juice, agave nectar, jalepenos", ['hot', 'strong'], '/img/drinks/cocktails/marg.webp'),

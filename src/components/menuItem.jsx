@@ -35,6 +35,7 @@ export default function MenuItem({ data }) {
                 <div className={ styles.titleBox }>
 
                     <p className={ styles.title }>
+                        { data.tags?.includes('seasonal') && <p className={ styles.seasonal }>Seasonal</p> }
                         <span>{ data.name }</span>
                         <span className={ styles.icons }>
                             { data.tags?.map((tag, i) => {

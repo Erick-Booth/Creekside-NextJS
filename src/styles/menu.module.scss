@@ -159,6 +159,13 @@ h4.subCategoryDesc {
             width: 100%;
             justify-content: space-between;
 
+            p.seasonal {
+                font-family: 'Dancing Script';
+                text-transform: capitalize;
+                color: globals.$Gold-Light;
+                font-size: 26px;
+            }
+
             p.title,
             p.price {
                 z-index: 3;
