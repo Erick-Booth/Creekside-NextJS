@@ -35,6 +35,23 @@ export default function Home() {
           <Link href={ "/drinks" }><iconify-icon icon="fluent-emoji:tropical-drink"></iconify-icon> Drink Menu</Link>
         </div>
 
+        {
+          new Date() < new Date(2023, 8, 30) && <>
+            <div className="specialCard">
+              <span className="star"><iconify-icon className="star" icon={ "twemoji:beach-with-umbrella" } /></span>
+              <h2>{ `${new Date() < new Date(2023, 7, 31) ? 'New' : ''} Summer Cocktails` }</h2>
+              <p>& Poolside Buckets</p>
+
+              <span className='separator' />
+
+
+              <p className='desc'>Try our limited-time drink specials!</p>
+
+              <Link href={ '/drinks' }>View Drinks</Link>
+            </div>
+          </>
+        }
+
         <SpecialCard day={ TODAY } isToday={ true } />
 
         <h2 className='blueHeading'>{ TODAY == 0 && 'But ' }Check out our other daily specials <iconify-icon inline icon="emojione:face-savoring-food"></iconify-icon></h2>
