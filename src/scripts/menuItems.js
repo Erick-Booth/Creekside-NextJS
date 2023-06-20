@@ -90,6 +90,10 @@ const MENUITEMS = {
         ],
         beer: {
             "bottles & seltzers": [
+                new MenuItem("Cathead Sparkling", 20, "Enjoy a bucket of 5 any-flavor Cathead Sparkling Satsuma madarin/strawberry lemonade/grapefruit", ['seasonal']),
+                new MenuItem("Funny Water Bucket", 18, "Enjoy a bucket of 5 any-flavor Funny Water. Light & Non-carbonated alcoholic water. Berry ACAI/Ginger Lemon/Jalepeno Lime", ['seasonal']),
+                new MenuItem("Yazoo Bucket", 12, "Enjoy a bucket of 5 local Yazoo beer. Either Calla IPA or Gerst Amber Ale.", ['seasonal']),
+                new MenuItem("High Noon Bucket", 18, "Enjoy a bucket of 5 High Noon vodka sodas, or tequila seltzers.", ['seasonal']),
                 new MenuItem("Bud Light", 4),
                 new MenuItem("Mich Ultra", 4),
                 new MenuItem("Miller Lite", 4),
@@ -158,6 +162,11 @@ const MENUITEMS = {
             ]
         },
         cocktails: [
+            new MenuItem("Mississippi Mule", 9, "Cathead Honeysuckle vodka, lime & ginger beer.", ['seasonal'], ''),
+            new MenuItem("Peach Colada", 10, "Bacardi Superior rum, Malibu Coconut rum, peach syrup, coconut cream & pineapple juice.", ['sweet', 'seasonal'], ''),
+            new MenuItem("Orange Limeade", 9, "Cathead bitter orange vodka, lime juice, simple syrup, starry lemon-lime soda.", ['sweet', 'seasonal'], ''),
+            new MenuItem("Bourbon Tea", 9, "Old Soul Bourbon, Iced Tea, simple syrup, pick a flavor: peach, strawberry & raspberry.", ['sweet', 'seasonal'], ''),
+            new MenuItem("Berry Lemonade", 10, "Pink Whitney, Cathead Rspberry vodka, strawberry & raspberry puree, lemonade", ['sweet', 'seasonal'], ''),
             new MenuItem("Captain Charlotte", 10, "Captain Morgan Spiced Rum, Orange & Pineapple Juice, Splash of Grenadine", ['sweet'], '/img/drinks/cocktails/the_charlotte.webp'),
             new MenuItem("Chattanooga Cherry Mule", 12, "Chattanooga Casket Whiskey, cherries, lime, ginger beer", null, '/img/drinks/cocktails/cherry-mule.webp'),
             new MenuItem("Blue Spirit", 11, "Vodka, Rum, Gin, Blue Curacao, Sour Mix, Sierra Mist", ['sweet'], '/img/drinks/cocktails/blue_spirit.webp'),
