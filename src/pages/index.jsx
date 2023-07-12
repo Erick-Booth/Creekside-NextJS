@@ -71,6 +71,12 @@ export default function Home() {
 
         <SpecialCard day={ querySpecial } isToday={ false } />
 
+        <div className="specialCard">
+          <span className="star"><iconify-icon className="star" icon={ "vscode-icons:file-type-coffeescript" } /></span>
+          <h2>{ `Join us for Brunch` }</h2>
+          <p>Saturdays from 10am - Noon</p>
+        </div>
+
       </main>
     </>
   );
