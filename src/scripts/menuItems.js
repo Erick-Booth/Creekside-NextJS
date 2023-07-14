@@ -49,7 +49,7 @@ const MENUITEMS = {
             new MenuItem('Bourbon Burger ', 15, ' Bourbon glazed burger with applewood bacon, grilled onions, and choice of cheese'),
             new MenuItem('Creekside Fish Sandwich ', 16, ' 2pc of fried tavern-style cod filets on a brioche bun w/ pub sauce, lettuce & tomato'),
             new MenuItem('Creekside Chicken Sandwich ', 14, ' Golden fried chicken breast with bang-bang sauce and fresh slaw, stacked in a brioche bun'),
-            new MenuItem('Taco Trio ', 15, '3 tacos, beef or chicken, topped with lettuce, tomato & cheese; side of salsa and sour cream'),
+            new MenuItem('Taco Trio ', 15, '3 tacos, beef or chicken, topped with lettuce, tomato & cheese; side of salsa and sour cream; Fish tacos: fried fish filet topped with coleslaw & band bang sauce.'),
         ],
         dinners: [
             new MenuItem('Ribeye Steak', 26, ' 10oz Ribeye steak cooked to perfection served with 2 sides'),
