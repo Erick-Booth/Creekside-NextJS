@@ -37,6 +37,12 @@
     margin: 0 auto;
     padding: 0 1rem;
 
+    .advertisementImage {
+        width: min(100%, 500px);
+        height: auto;
+        margin: 1rem;
+    }
+
     .foodDrinkBtns {
         display: flex;
         justify-content: space-between;

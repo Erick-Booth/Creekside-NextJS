@@ -2,11 +2,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/home.module.scss';
 import SpecialCard from '../components/specialCard';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
-  const TODAY = new Date().getDay();
-  const [querySpecial, setQuerySpecial] = useState(TODAY < 6 ? TODAY + 1 : 1); //Default to tomorrow, will update when user clicks a new DOTW.
+  const [TODAY, setTODAY] = useState(new Date());
+  const [querySpecial, setQuerySpecial] = useState(1);
+  const [shouldRenderAdvert, setSetshouldRenderAdvert] = useState(false);
+
+  useEffect(() => {
+    const DATE = new Date();
+    setTODAY(DATE);
+    setQuerySpecial(DATE.getDay() < 6 ? DATE.getDay() + 1 : 1);
+    if (DATE <= new Date(2023, 7, 21)) { setSetshouldRenderAdvert(true); }
+  }, []);
 
   const SPECIAL_DAY_BUTTONS = [
     { name: 'Monday', day: 1 },
@@ -16,10 +24,6 @@ export default function Home() {
     { name: 'Friday', day: 5 },
     { name: 'Saturday', day: 6 },
   ];
-
-  function handleSpecialQuery(day) {
-    setQuerySpecial(day);
-  }
 
   return (
     <>
@@ -36,7 +40,11 @@ export default function Home() {
         </div>
 
         {
-          new Date() < new Date(2023, 8, 30) && <>
+          shouldRenderAdvert && <Image className={ styles.advertisementImage } src={ '/img/gallery/NewGrass.jpg' } width={ 500 } height={ 500 } />
+        }
+
+        {
+          TODAY < new Date(2023, 8, 30) && <>
             <div className="specialCard">
               <span className="star"><iconify-icon className="star" icon={ "twemoji:beach-with-umbrella" } /></span>
               <h2>{ `${new Date() < new Date(2023, 7, 31) ? 'New' : ''} Summer Cocktails` }</h2>
@@ -52,7 +60,7 @@ export default function Home() {
           </>
         }
 
-        <SpecialCard day={ TODAY } isToday={ true } />
+        <SpecialCard day={ TODAY.getDay() } isToday={ true } />
 
         <h2 className='blueHeading'>{ TODAY == 0 && 'But ' }Check out our other daily specials <iconify-icon inline icon="emojione:face-savoring-food"></iconify-icon></h2>
 
@@ -61,7 +69,7 @@ export default function Home() {
           { SPECIAL_DAY_BUTTONS.map((btn, i) => {
             return <button
               key={ i }
-              onClick={ () => { handleSpecialQuery(btn.day) } }
+              onClick={ () => { setQuerySpecial(btn.day) } }
               data-active={ querySpecial === btn.day }
               data-is-tomorrow={ TODAY + 1 === btn.day }>
               { btn.name }
