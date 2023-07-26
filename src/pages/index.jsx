@@ -7,13 +7,11 @@ import { useState, useEffect } from 'react';
 export default function Home() {
   const [TODAY, setTODAY] = useState(new Date());
   const [querySpecial, setQuerySpecial] = useState(1);
-  const [shouldRenderAdvert, setSetshouldRenderAdvert] = useState(false);
 
   useEffect(() => {
     const DATE = new Date();
     setTODAY(DATE);
     setQuerySpecial(DATE.getDay() < 6 ? DATE.getDay() + 1 : 1);
-    if (DATE <= new Date(2023, 7, 21)) { setSetshouldRenderAdvert(true); }
   }, []);
 
   const SPECIAL_DAY_BUTTONS = [
@@ -38,10 +36,6 @@ export default function Home() {
           <Link href={ '/food' }><iconify-icon icon="noto:hamburger"></iconify-icon> Food Menu</Link>
           <Link href={ "/drinks" }><iconify-icon icon="fluent-emoji:tropical-drink"></iconify-icon> Drink Menu</Link>
         </div>
-
-        {
-          shouldRenderAdvert && <Image className={ styles.advertisementImage } src={ '/img/gallery/NewGrass.jpg' } width={ 500 } height={ 500 } />
-        }
 
         {
           TODAY < new Date(2023, 8, 30) && <>
