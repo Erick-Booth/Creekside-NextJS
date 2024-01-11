@@ -11,11 +11,11 @@ export default function Terms() {
                 <header>
                     <Link href={ '/' }><Image src='/img/svg/Logo.svg' alt="Creekside Bar & Grille" height={ 250 } width={ 350 } /></Link>
                 </header>
-                <p>Revised: 4/25/2023</p>
+                <p>Revised: 1/11/2024</p>
                 <h2>AGREEMENT TO TERMS</h2><br /><br />
                 These Terms of Use constitute a legally binding agreement
                 made between you, whether personally or on behalf of an entity (&quot;you&quot;) and Creekside Bar & Grille (&quot;Brand&quot;, &rsquo;we&quot;, &quot;us&quot;,
-                or &quot;our&rsquo;), concerning your access to and use of the healthintransportation.com website as well as any other media form,
+                or &quot;our&rsquo;), concerning your access to and use of the creeksidebarandgrille.com website as well as any other media form,
                 media channel, mobile website or mobile application related, linked, or otherwise connected thereto
                 (collectively, the &quot;Site&quot;). You agree that by accessing the Site, you have read, understood, and agreed to
                 be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE

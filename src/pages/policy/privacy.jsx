@@ -11,12 +11,12 @@ export default function Privacy() {
                 <header>
                     <Link href={ '/' }><Image src='/img/svg/Logo.svg' alt="Creekside Bar & Grille" height={ 250 } width={ 350 } /></Link>
                 </header>
-                <p>Revised 4/25/2023</p><br />
+                <p>Revised 1/11/2024</p><br />
                 <h1>PRIVACY POLICY</h1><br /><br />
                 Thank you for choosing to be part of our community at Creekside Bar & Grille (“Brand”, “we”, “us”, or
                 “our”). We are committed to protecting your personal information and your right to privacy. If
                 you have any questions or concerns about our policy, or our practices with regards to your
-                personal information, please contact us at <a href="mailto:erick@erickbooth.com">erick@erickbooth.com</a>.
+                personal information, please contact our Website Administrator at <a href="mailto:erick@erickbooth.com">erick@erickbooth.com</a>.
                 When you visit our website and use our services, you trust us with your personal information. I
                 take your privacy very seriously. In this privacy policy, we seek to explain to you in the clearest
                 way possible what information we collect, how we use it and what rights you have in relation to it. I
