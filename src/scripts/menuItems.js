@@ -58,10 +58,10 @@ const MENUITEMS = {
             new MenuItem('Taco Trio ', 15, '3 tacos - Beef or chicken: topped with lettuce, tomato & cheese | OR Fish: fried cod topped w/ coleslaw & bang-bang sauce.', ['pescatarian']),
         ],
         desserts: [
-            new MenuItem('Tiramisu', 3, ' Soft, creamy, mini tiramisu cake', ['vegetarian']),
-            new MenuItem('Red Velvet Cake', 3, ' Soft, fluffy, mini red velvet cake with cream', ['vegetarian']),
-            new MenuItem('Cannoli', 3, 'A deep-fried & chilled pastry filled with sweetened and flavored ricotta cheese', ['vegetarian']),
-            new MenuItem('Churros with Ice Cream', 6, ' Two cinnamon sugar churros with vanilla ice cream', ['vegetarian']),
+            new MenuItem('Ask your server', null, 'We might have something sweet for you!🍰'),
+            // new MenuItem('Red Velvet Cake', 3, ' Soft, fluffy, mini red velvet cake with cream', ['vegetarian']),
+            // new MenuItem('Cannoli', 3, 'A deep-fried & chilled pastry filled with sweetened and flavored ricotta cheese', ['vegetarian']),
+            // new MenuItem('Churros with Ice Cream', 6, ' Two cinnamon sugar churros with vanilla ice cream', ['vegetarian']),
         ],
         sides: [
             new MenuItem('Fries', 3, 'Straight, seasoned, cripsy & hot', ['vegetarian', 'vegan']),
